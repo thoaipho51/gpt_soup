@@ -5,9 +5,8 @@ st.title("Thoại Soup Tích hợp chat gpt vào ứng dụng")
 
 model = "text-davinci-003"
 
-with open("apiKey.txt", "r") as f:
-    openai.api_key = f.readline() # Lấy apiKey từ file txt
 
+openai.api_key = "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"
 #Hàm gọi api gpt để xử lý
 def get_response_from_chatgpt(user_question):
     response = openai.Completion.create(
